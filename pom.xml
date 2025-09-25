@@ -24,19 +24,18 @@
     </dependencies>
 
     <build>
-        <finalName>timecal</finalName>
+        <finalName>tempconverter</finalName>
         <plugins>
             <!-- Maven Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.13.0</version>
+                <version>3.8.1</version>
                 <configuration>
-                    <release>17</release>
-
+                    <source>17</source>
+                    <target>17</target>
                 </configuration>
             </plugin>
-
             <!-- Maven Jar Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -45,7 +44,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Cal</mainClass>
+                            <mainClass>TempCalcMain</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -92,7 +91,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>TimeCal</mainClass>
+                            <mainClass>TempCalcMain</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
